@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    <div class="profile-info">
+      <!-- Profile Picture -->
+      <figure data-testid="test-user-avatar">
+        <img src="profile_picture.jpg" alt="An avatar image of Chidindu Emmanuel" />
+      </figure>
+
+      <div class="profile-bio">
+        <h2 data-testid="test-user-name" aria-label="Name: Chidindu Emmanuel">CHIDINDU EMMANUEL CHIGOZIE</h2>
+        <p data-testid="test-user-bio">I am a Frontend developer passionate about building functional web experience. I like to code and i also like when my code works. My goal is to become highly proficient and independent in coding. I enjoy learning by building.</p>
+        <p data-testid="test-user-time"></p>
+      </div>
+      
+    </div>
+
+    <ul data-testid="test-user-social-links" >
+      <h2>Socials</h2>
+      <div class="social-links">
+        <li data-testid="test-user-social-github"><a href="https://github.com/heisemmanuell" target="_blank"> <i class="fa-brands fa-github" rel="noopener noreferrer"></i> GitHub</a></li>
+        <li data-testid="test-user-social-linkedin"><a href="https://www.linkedin.com/in/chidindu-emmanuel-chigozie-a07004239/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      </div>
+    </ul>
+
+    <hr />
+    
+    <div class="list-container">
+      <section data-testid="test-user-hobbies">
+        <h2>Hobbies</h2>
+        <ul class="list">
+          <li>Building functional and beautiful web pages</li>
+          <li>Listening to music</li>
+          <li>Going out with friends</li>
+          <li>Journaling</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-user-dislikes">
+        <h2>Dislikes</h2>
+        <ul class="list">
+          <li>Unnecessary Talks</li>
+          <li>Bugs (in my code)</li>
+          <li>Not having money</li>
+          <li>People who like to play mind games</li>
+        </ul>
+      </section>
+    </div>
+    
+  </article>
+  <script src="script.js"></script>
+</body>
+</html>

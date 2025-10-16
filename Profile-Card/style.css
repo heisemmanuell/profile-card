@@ -1,0 +1,131 @@
+body {
+  font-family: "courier", serif;
+  background: #f2f5f8;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+figure img{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+  box-shadow: 0 2px 10px rgba(0, 123, 255, 0.2);
+}
+
+@media (max-width: 600px) {
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.profile-info {
+  display: flex;  
+  align-items: center;     
+}
+
+.profile-bio h2 {
+  letter-spacing: 3px;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  /* padding: 0; */
+}
+
+hr {
+  margin: 10px;
+  border: none;
+  border-top: 1px solid #000000;
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: #0073b1; 
+  font-weight: bold;
+}
+
+.list-container {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: flex-start;    
+  gap: 40px;                  
+  flex-wrap: wrap;            
+}
+
+.list-container section {
+  flex: 1;                    
+  min-width: 250px;          
+  background: #f9f9f9;        
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+article[data-testid="test-profile-card"] {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.social-links a:hover {
+  background: #e6f2ff;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 14px rgba(0, 123, 255, 0.4);
+}
+
+p[data-testid="test-user-time"] {
+  background: #e6f2ff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .social-links {
+    flex-direction: column;     /* stack vertically */
+    /* gap: 12px;                  reduce spacing */
+    /* align-items: center;        center each link */
+  }
+
+  .social-links a {
+    width: 50%;               
+    justify-content: center;
+  }
+}
