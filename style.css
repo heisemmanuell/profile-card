@@ -119,9 +119,7 @@ p[data-testid="test-user-time"] {
 
 @media (max-width: 600px) {
   .social-links {
-    flex-direction: column;     /* stack vertically */
-    /* gap: 12px;                  reduce spacing */
-    /* align-items: center;        center each link */
+    flex-direction: column;
   }
 
   .social-links a {

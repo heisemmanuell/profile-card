@@ -7,7 +7,7 @@ This is a simple Profile card for showing basic things about me.
 - CSS
 - JavaScript
 
-## ✨ Features
+## Features
 - Fully responsive layout 
 - Fully accessible  
 - Modern and clean design  
@@ -18,7 +18,7 @@ This is a simple Profile card for showing basic things about me.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/heisemmanuell/<your-repo-name>.git
+git clone https://github.com/heisemmanuell/profile-card.git
 ```
 
 ### 2. Open the project
