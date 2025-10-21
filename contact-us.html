@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/styles/contact-us.css">
+  <link rel="stylesheet" href="/styles/nav.css">
+</head>
+<body>
+  <nav class="navbar">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about-me.html" class="nav-link">About Me</a></li>
+          <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  <form id="contact-form" data-testid="test-contact-form" novalidate>
+    <label for="name">Full Name:</label>
+    <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      data-testid="test-contact-name" 
+      placeholder="Enter your full name" 
+      aria-describedby="error-name" 
+      required
+    />
+    <span 
+      id="error-name" 
+      data-testid="test-contact-error-name" 
+      class="error-message" 
+      aria-live="polite">
+    </span>
+
+    <label for="email">Email:</label>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      data-testid="test-contact-email" 
+      placeholder="Enter your email" 
+      required 
+      aria-describedby="error-email"
+    />
+    <span 
+        id="error-email" 
+        data-testid="test-contact-error-email" 
+        class="error-message" 
+        aria-live="polite">
+    </span>
+
+    <label for="subject">Subject:</label>
+    <input 
+      type="text"  
+      id="subject" 
+      name="subject" 
+      data-testid="test-contact-subject" 
+      placeholder="Subject" 
+      required 
+      aria-describedby="error-subject"
+    />
+    <span 
+      id="error-subject" 
+      data-testid="test-contact-error-subject" 
+      class="error-message" 
+      aria-live="polite">
+    </span>
+
+    <label for="message">Message:</label>
+    <textarea 
+      id="message" 
+      name="message" 
+      data-testid="test-contact-message" 
+      placeholder="Enter your message" 
+      required 
+      aria-describedby="error-message" 
+      minlength="10">
+    </textarea>
+    <span 
+      id="error-message" 
+      data-testid="test-contact-error-message" 
+      class="error-message" 
+      aria-live="polite">
+    </span>
+
+    <button  
+      type="submit" 
+      data-testid="test-contact-submit">
+      Submit
+    </button>
+
+    <p 
+      data-testid="test-contact-success" 
+      id="success-message" 
+      class="success-message"
+      aria-live="polite">
+    </p>
+  </form>
+
+  <script src="/scripts/contact-us.js"></script>
+</body>
+</html>

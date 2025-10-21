@@ -1,6 +1,6 @@
 # My Profile Card
 
-This is a simple Profile card for showing basic things about me. 
+This is a simple Profile card showing basic things about me, a contact form with form validation and a little info if you are curious about who i am. 
 
 ## Stack
 - HTML
@@ -13,6 +13,7 @@ This is a simple Profile card for showing basic things about me.
 - Modern and clean design  
 - Lightweight and fast  
 - Built with pure HTML, CSS, and JS (no frameworks)
+- Keyboard navigable
 
 ## Getting Started
 
